@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+html, body {
+  width: 100%;
+}
+
+body {
+  background-color: #090b1a;
+  color: #fff;
+  margin: 20px;
+}
+
+.cointainer {
+  background-color: #1b1938;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.img {
+  height: 250px;
+  background-image: url(./images/image-header-mobile.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  background-color: rgba(170, 92, 219, 0.6);
+  height: 100%;
+}
+
+.content-box {
+  padding: 20px;
+  font-family: "Inter",sans-serif;
+}
+
+.content-box h2 span {
+  color: #aa5cdb;
+}
+
+.content-box p {
+  margin: 20px 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+}
+
+.content-box ul li {
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.content-box ul li span {
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  display: block;
+  font-weight: 700;
+  color: #fff;
+  text-transform: lowercase;
+}
+
+@media screen and (min-width: 769px) {
+  html, body {
+    height: calc(100% - 20px);
+    width: calc(100%-20px);
+  }
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .cointainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  body .cointainer .img, body .cointainer .content-box {
+    width: 400px;
+  }
+  body .cointainer .img {
+    background-image: url(./images/image-header-desktop.jpg);
+    background-size: cover;
+    background-position: top;
+  }
+  body .cointainer .content-box {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 50px;
+    text-align: start;
+  }
+  body .cointainer .content-box ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+/*# sourceMappingURL=style.css.map */
